@@ -7,13 +7,13 @@ int gcd(int a, int b) {
     return a;
    }
    else if (a > b) {
-    if (0 == (a & b)){
+    if (0 == (a & b)) {
         return b;
     }
     else {
         dl = b;
-        for (; 0<dl; dl--){
-            if (0 == (b % dl) && 0 == (a % dl)){
+        for (; 0<dl; dl--) {
+            if (0 == (b % dl) && 0 == (a % dl)) {
                 return dl;
                 break;
             }
@@ -21,20 +21,21 @@ int gcd(int a, int b) {
     }
    }
    else {
-    if (0 == (b & a)){
+    if (0 == (b & a)) {
         return a;
     }
     else {
         dl = a;
-        for (; 0<dl; dl--){
-            if (0 == (a % dl) && 0 == (b % dl)){
+        for (; 0<dl; dl--) {
+            if (0 == (a % dl) && 0 == (b % dl)) {
                 return dl;
                 break;
             }
         }
     }
    }
-   if ( 0 == dl){
+   if ( 0 == dl) {
     return 1;
    }
+   return 0;     
 }
