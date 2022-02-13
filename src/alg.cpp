@@ -1,7 +1,7 @@
 // Copyright 2021 NNTU-CS
 
 int gcd(int a, int b) {
-    int dl =0;
+        int dl =0;
 
    if(a == b){
     return a;
@@ -37,5 +37,4 @@ int gcd(int a, int b) {
    if ( 0 == dl){
     return 1;
    }
-
 }
