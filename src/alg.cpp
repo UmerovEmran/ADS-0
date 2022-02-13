@@ -3,7 +3,7 @@
 int gcd(int a, int b) {
         int dl =0;
 
-   if(a == b){
+   if(a == b) {
     return a;
    }
    else if (a > b) {
